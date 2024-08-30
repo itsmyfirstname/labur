@@ -1,0 +1,20 @@
+update-rust:
+    rustup update
+
+compile-rust:
+    rustc $(rust_file)
+
+build-with-cargo:
+    cargo build
+
+run-with-cargo:
+    cargo run
+
+check:
+    cargo check
+
+cargo-release:
+    cargo build --release
+
+read-rust-docs:
+    rustup doc
